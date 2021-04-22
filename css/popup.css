@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&display=swap');
+
+.card {
+    /* width: 100px; */
+    border-radius: 5px;
+    overflow: hidden;
+    color: #424242;
+    margin: 18%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.modal-open {
+    display: inline-block;
+    border-radius: 10px;
+    background: black;
+    padding: 5px 13px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s;
+}
+
+.modal-open:hover {
+  background-color: grey;
+}
+
+.modal-label {
+    position: relative;
+}
+
+.modal-radio {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+  z-index:99;
+}
+
+.modal2{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+#modal-open2:checked + .modal2{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal .modal-content {
+    position: absolute;
+    width: 70%;
+    height: 350px;
+    max-height: 70%;
+    top: 10%;
+    left: 15%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn:after,
+.close-btn:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  background:#4caf50;
+  color:#fff;
+  border-radius:15px;
+}
+
+/*modal dva*/
+
+.card-dva {
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #424242;
+    margin: 50px auto;
+    padding: 20px;
+  display: inline-block;
+}
+
+
+.modal-open-dva {
+    display: inline-block;
+    border-radius: 10px;
+    background: black;
+    padding: 5px 13px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s;
+}
+
+.modal-open-dva:hover {
+  background-color: grey;
+}
+
+.modal-label-dva {
+    position: relative;
+}
+
+.modal-radio-dva {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-dva {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+  z-index:99;
+}
+
+.modal2-dva{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+#modal-open2-dva:checked + .modal2-dva{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+.overlay-dva {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal-dva .modal-content-dva {
+    position: absolute;
+    width: 70%;
+    height: 350px;
+    max-height: 70%;
+    top: 10%;
+    left: 15%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.close-btn-dva {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn-dva:after,
+.close-btn-dva:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn-dva:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  background:#4caf50;
+  color:#fff;
+  border-radius:15px;
+}
+
+/*modal tri*/
+
+.card-tri {
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #424242;
+    margin: 50px auto;
+    padding: 20px;
+  display: inline-block;
+}
+
+
+.modal-open-tri {
+    display: inline-block;
+    border-radius: 10px;
+    background: black;
+    padding: 5px 13px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s;
+}
+
+.modal-open-tri:hover {
+  background-color: grey;
+}
+
+.modal-label-tri {
+    position: relative;
+}
+
+.modal-radio-tri {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-tri {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+  z-index:99;
+}
+
+.modal2-tri{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+#modal-open2-tri:checked + .modal2-tri{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+.overlay-tri {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal-tri .modal-content-tri {
+    position: absolute;
+    width: 70%;
+    height: 350px;
+    max-height: 70%;
+    top: 10%;
+    left: 15%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.close-btn-tri {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn-tri:after,
+.close-btn-tri:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn-tri:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  background:#4caf50;
+  color:#fff;
+  border-radius:15px;
+}
+
+/*modal cetri*/
+
+.card-cetri {
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #424242;
+    margin: 50px auto;
+    padding: 20px;
+  display: inline-block;
+}
+
+
+.modal-open-cetri {
+    display: inline-block;
+    border-radius: 10px;
+    background: black;
+    padding: 5px 13px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s;
+}
+
+.modal-open-cetri:hover {
+  background-color: grey;
+}
+
+.modal-label-cetri {
+    position: relative;
+}
+
+.modal-radio-cetri {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-cetri {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+  z-index:99;
+}
+
+.modal2-cetri{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+#modal-open2-cetri:checked + .modal2-cetri{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+.overlay-cetri {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal-cetri .modal-content-cetri {
+    position: absolute;
+    width: 70%;
+    height: 350px;
+    max-height: 70%;
+    top: 10%;
+    left: 15%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.close-btn-cetri {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn-cetri:after,
+.close-btn-cetri:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn-cetri:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  background:#4caf50;
+  color:#fff;
+  border-radius:15px;
+}
+
+/*modal pet*/
+
+.card-pet {
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #424242;
+    margin: 50px auto;
+    padding: 20px;
+  display: inline-block;
+}
+
+
+.modal-open-pet {
+    display: inline-block;
+    border-radius: 10px;
+    background: black;
+    padding: 5px 13px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s;
+}
+
+.modal-open-pet:hover {
+  background-color: grey;
+}
+
+.modal-label-pet {
+    position: relative;
+}
+
+.modal-radio-pet {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-pet {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+  z-index:99;
+}
+
+.modal2-pet{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+#modal-open2-pet:checked + .modal2-pet{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+.overlay-pet {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal-pet .modal-content-pet {
+    position: absolute;
+    width: 70%;
+    height: 350px;
+    max-height: 70%;
+    top: 10%;
+    left: 15%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.close-btn-pet {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn-pet:after,
+.close-btn-pet:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn-pet:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  background:#4caf50;
+  color:#fff;
+  border-radius:15px;
+}
+
+/*modal sest*/
+
+.card-sest {
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #424242;
+    margin: 50px auto;
+    padding: 20px;
+  display: inline-block;
+}
+
+
+.modal-open-sest {
+    display: inline-block;
+    border-radius: 10px;
+    background: black;
+    padding: 5px 13px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    transition: 0.5s;
+}
+
+.modal-open-sest:hover {
+  background-color: grey;
+}
+
+.modal-label-sest {
+    position: relative;
+}
+
+.modal-radio-sest {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal-sest {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .25s, transform .25s;
+  z-index:99;
+}
+
+.modal2-sest{
+  transform: scale(0.8) translate(0,-100%);
+    transition: transform .35s,opacity .35s;
+}
+
+#modal-open2-sest:checked + .modal2-sest{
+  transform:scale(1) translate(0,0);
+  opacity:1;
+}
+
+.overlay-sest {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.modal-sest .modal-content-sest {
+    position: absolute;
+    width: 70%;
+    height: 350px;
+    max-height: 70%;
+    top: 10%;
+    left: 15%;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px -2px #222;
+    padding: 20px;
+}
+
+.close-btn-sest {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    border: 2px solid #f44336;
+    cursor: pointer;
+}
+
+.close-btn-sest:after,
+.close-btn-sest:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background: #f44336;
+    left: 15%;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+}
+
+.close-btn-sest:before {
+    transform: rotate(-45deg);
+}
+
+.action-btn{
+  display:inline-block;
+  padding: 10px 20px;
+  background:#4caf50;
+  color:#fff;
+  border-radius:15px;
+}
+
+
+
